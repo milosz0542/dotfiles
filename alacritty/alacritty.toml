@@ -1,0 +1,88 @@
+
+[window]
+padding = { x = 10, y = 10 }
+opacity = 0.85
+blur = true
+dynamic_padding = true
+startup_mode = "Windowed"
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "MesloLGS Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "MesloLGS Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGS Nerd Font"
+style = "Italic"
+
+[colors]
+draw_bold_text_with_bright_colors = false
+transparent_background_colors = true
+
+# Rose Pine Moon color scheme (fallback)
+[colors.primary]
+background = "#232136"
+foreground = "#e0def4"
+
+[colors.cursor]
+text = "#232136"
+cursor = "#56526e"
+
+[colors.selection]
+text = "#e0def4"
+background = "#393552"
+
+[colors.normal]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#9ccfd8"
+yellow = "#f6c177"
+blue = "#3e8fb0"
+magenta = "#c4a7e7"
+cyan = "#ea9a97"
+white = "#e0def4"
+
+[colors.bright]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#9ccfd8"
+yellow = "#f6c177"
+blue = "#3e8fb0"
+magenta = "#c4a7e7"
+cyan = "#ea9a97"
+white = "#e0def4"
+
+[keyboard]
+bindings = [
+    { key = "Left", mods = "Alt", chars = "\u001bB" },
+    { key = "Right", mods = "Alt", chars = "\u001bF" },
+    { key = "Back", mods = "Control", chars = "\u0015" },
+    { key = "K", mods = "Super", chars = "\u0017" }
+]
+
+[mouse]
+hide_when_typing = true
+
+[mouse.double_click]
+threshold = 300
+
+[mouse.triple_click]
+threshold = 300
+
+[env]
+TERM = "xterm-256color"
+
+[debug]
+render_timer = false
+persistent_logging = false
+log_level = "Warn"
+
+[general]
+# Main configuration
+import = ["~/.config/alacritty/repothemes/themes/rose-pine.toml"]
