@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="Instance Name" start-page="README.md">
+
+    <toc-element topic="README.md"/>
+    <toc-element toc-title="yazi">
+        <toc-element toc-title="flavors">
+            <toc-element toc-title="catppuccin-frappe.yazi">
+                <toc-element topic="catppuccin-frappe.yazi_README.md"/>
+            </toc-element>
+        </toc-element>
+    </toc-element>
+</instance-profile>
