@@ -3,7 +3,7 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-source ~/.bash_profile
+# source ~/.bash_profile
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -104,10 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # >>> Added by Spyder >>>
 alias spyder=/home/milosz/.local/spyder-6/envs/spyder-runtime/bin/spyder
 alias uninstall-spyder=/home/milosz/.local/spyder-6/uninstall-spyder.sh
@@ -115,6 +111,11 @@ alias uninstall-spyder=/home/milosz/.local/spyder-6/uninstall-spyder.sh
 alias shopt='/usr/bin/shopt'
 
 export MATLAB_JAVA=/usr/lib/jvm/java-8-openjdk/jre
+
+# NOTE nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # NOTE: Zoxide
 eval "$(zoxide init zsh)"
@@ -140,7 +141,8 @@ export FZF_TMUX_OPTS=" -p90%,70% "
 # EZA Alias
 alias ls="eza --no-filesize --long --color=always --icons=always --no-user"
 
-
+# Shopt Alias
+alias shopt='/usr/bin/shopt'
 
 
 # Starship init. Must be on the end.

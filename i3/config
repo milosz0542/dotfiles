@@ -36,8 +36,8 @@ bindsym $mod+Shift+m move scratchpad
 bindsym $mod+m exec --no-startup-id scratchpad show
 
 # start a terminal
-bindsym $mod+Return exec konsole
-bindsym $mod+Shift+Return exec konsole; floating enable 
+bindsym $mod+Return exec kitty
+bindsym $mod+Shift+Return exec kitty; floating enable 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -169,8 +169,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 #exec --no-startup-id nitrogen --restore
 exec --no-startup-id feh --bg-scale /home/milosz/.config/i3/bg.jpg
-exec --no-startup-id polybar top
-exec --no-startup-id polybar bottom
+exec --no-startup-id polybar
 exec --no-startup-id compton --config /home/milosz/.config/compton.conf
 exec --no-startup-id dunst
 exec --no-startup-id synclient TapButton2=3
@@ -179,6 +178,9 @@ exec --no-startup-id fcitx -d
 exec --no-startup-id picom
 #exec --no-startup-id xmodmap /home/milosz/.config/xmodmap
 #exec --no-startup-id plasma-browser-integration-host
+
+exec xinput set-prop 10 "libinput Tapping Enabled" 1
+exec xfsettingsd --daemon
 
 ##window defaults
 for_window [instance="nitrogen"] floating enable

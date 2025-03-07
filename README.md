@@ -4,12 +4,11 @@
 This is my personal dotfiles repository. It contains configuration files for various tools and applications that I use on a daily basis.
 
 ## Software
-- **OS**: Manjaro Linux
+- **OS**: Arch Linux (I use Arch btw.)
 - **WM**: i3wm
-- **Terminal**: Konsole (with catppuccin-mocha theme)
+- **Terminal**: Kitty
 - **Shell**: Zsh
 - **Editor**: Neovim
-- **Browser**: Firefox
 
 ## Hardware
 - **Laptop**: Thinkpad E16 Gen 2 (Intel Ultra 5 125U)
