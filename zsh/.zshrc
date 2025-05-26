@@ -108,9 +108,12 @@ source $ZSH/oh-my-zsh.sh
 alias spyder=/home/milosz/.local/spyder-6/envs/spyder-runtime/bin/spyder
 alias uninstall-spyder=/home/milosz/.local/spyder-6/uninstall-spyder.sh
 # <<< Added by Spyder <<<
-alias shopt='/usr/bin/shopt'
+# alias shopt='/usr/bin/shopt'
 
+# Matlab shit
 export MATLAB_JAVA=/usr/lib/jvm/java-8-openjdk/jre
+export LD_PRELOAD=/usr/lib/libstdc++.so.6
+export MATLAB_USE_SOFTWARE_OPENGL=1
 
 # NOTE nvm
 export NVM_DIR="$HOME/.nvm"
@@ -144,6 +147,9 @@ alias ls="eza --no-filesize --long --color=always --icons=always --no-user"
 # Shopt Alias
 alias shopt='/usr/bin/shopt'
 
-
 # Starship init. Must be on the end.
 eval "$(starship init zsh)"
+
+if [ -z $TMUX ]; then
+    tmux attach || tmux new 
+fi
